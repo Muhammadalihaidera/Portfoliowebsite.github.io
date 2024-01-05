@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAHEEN NETWORK || ABOUT</title>
+    <link rel="icon" href="icons.jpg">
+    <link rel="stylesheet" href="all.css">
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: white;
+            height: 100vh;
+        }
+      
+          nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+nav .logo a img{
+            width: 140px;
+            height: 60px;}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: rgb(26, 18, 18);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border-bottom:1.5 solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav .menu-btn i{
+    color: rgb(26, 18, 18);
+     font-size: 20px;
+     cursor: pointer;
+     display: none;
+}
+#click:checked ~ ul {
+   left: 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.head img{
+    width: 100%;
+    height: 90vh;
+    box-shadow: 100px 0px 10px rgb(110, 107, 107);
+}
+.data {
+    position: absolute;
+    top: 550px;
+    left: 60px;
+}
+.data .datah{
+    font-size: 40px;
+    font-family: initial;
+    font-family: 700;
+}
+.data .datap{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.P{
+    margin-left: 500rem;
+}
+.hone{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.pp{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+button{
+    margin-top: 20px;
+    margin-left:570px;
+    width: 160px;
+    height: 35px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: black;
+    color: yellow;
+
+} 
+iframe{
+    display: block;
+    margin: auto;
+    border: 2px solid yellow;
+}
+h4{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+}
+.content{
+    width: 40%;
+    height: 65%;
+    background-color:transparent;
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: 80px;
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    box-shadow: 2px 5px 2px rgb(82, 78, 78);
+}
+input,textarea{
+    width: 100%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 5px;
+    padding: 20px;
+
+}
+footer{
+    background-color: #1A0001;
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width:600px) {
+    nav .logo{
+        margin-top: 4px;
+    }
+    nav{
+        padding: 0 40px 0 50px;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content:'\f00d';
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background:  #f3dc5c ;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 40px 0;
+
+    }
+    nav ul li a{
+        width: 100%;
+        margin-left:-100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+
+    }
+    #click:checked ~ ul li a{
+        margin-left: 0;
+    }
+.head img{
+    width: 100%;
+    height: 40vh;
+    box-shadow: 10px 0px 10px rgb(110, 107, 107);
+}
+.data {
+    position: absolute;
+    top: 500px;
+    left: 60px;
+}
+.data .datah{
+    display: none;
+    font-size: 40px;
+    font-family: initial;
+    font-family: 700;
+}
+.data p{
+    display: none;
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.P{
+    margin-left: 500rem;
+}
+.P p{
+    font-size: 50px;
+}
+.hone{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+.pp{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+}
+button{
+    margin-top: 20px;
+    margin-left:130px;
+    width: 130px;
+    height: 30px;
+    background-color: yellow;
+    color: black;
+    font-weight: 400;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: black;
+    color: yellow;
+
+} 
+iframe{
+    width: 90%;
+    height:180px ;
+    display: block;
+    margin: auto;
+    border: 2px solid yellow;
+}
+h4{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.content{
+    width: 80%;
+    height: 65%;
+    background-color:transparent;
+    margin-left: 50px;
+    margin-top: 15px;
+    padding: 40px;
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    box-shadow: 2px 5px 2px rgb(82, 78, 78);
+}
+input,textarea{
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 5px;
+    padding: 20px;
+
+}
+footer{
+    background-color: #1A0001;
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+}
+footer a{
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+    
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><img src="icon.png" alt="" class=""></a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Content.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+        <img src="2.jpg" alt="">
+        <div class="data">
+            <h1 class="datah" >Who We Are.</h1>
+            <p class="datap">Represents creating compelling and informative <br> content to improve a website's visibility and ranking <br> on search engine results pages (SERPs).</p>
+            
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1 class="hone">Our Story</h1>
+            <p class="pp">
+                In the realm of SEO, our story is an ever-evolving journey marked by adapting strategies, <br> mastering algorithms, and creating valuable content to enhance online visibility and user engagement, aiming to consistently improve <br> rankings and stay ahead in the digital landscape.</p>
+            <h1 class="pp">Click Now</h1>
+                <button>Drop Your Email</button>
+        </section>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MYE6T_gd7H0?si=nEi9ZmKytDrGnHY3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+    <section>
+        <h1 class="pp">
+            Join Our Winning Team
+        </h1>
+        <h4>We are consistently looking to hire people with experience in digital marketing, <br> SEO, Social Media, PPC, Video Marketing, Graphic Design, Video Editing & Web development.</h4>
+        <div class="pp">Send us your details by filling up the form below</div>
+        <div class="content">
+            <form >
+              <p>Name: <input type="Name" placeholder="Name" required></p>
+              <p>Email: <input type="email" name="email" id="email" placeholder="Email" required></p>
+              <p>Phone: <input type="number" name="number" id="number" placeholder="Phone Number"></p>
+              <p>Your Bio / Cover Letter
+                <textarea name="coment" id="coment" cols="30" rows="100" placeholder="Your Bio / Cover Letter
+                "></textarea></p>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </section>
+    <br><br>
+
+
+    </section>
+    <footer>
+        <a href="#">Copyright © 2024</a>
+        <a href="#"> All rights reserved.</a>
+        <a href="#">Phone Number :: +92365488825</a>
+    </footer>
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener('click' ,showMsg);
+
+        function showMsg(){
+            alert("Check Your Internet And Try Again"+ "ThankYou")
+        }
+    </script>
+
+    
+</body>
+</html>
