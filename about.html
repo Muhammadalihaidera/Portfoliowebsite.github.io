@@ -122,27 +122,34 @@ h4{
     text-align: center;
     font-weight: 200;
 }
+ 
 .content{
     width: 40%;
     height: 65%;
-    background-color:transparent;
+    background-color:#FCBF02;
     margin-left: 400px;
     margin-top: 30px;
     padding: 80px;
-    border: 3px solid lightgray;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 50px;
     box-shadow: 2px 5px 2px rgb(82, 78, 78);
 }
 input,textarea{
     width: 100%;
     height: 30px;
-    border: 2px solid black;
+    border: 2px solid rgb(187, 137, 0);
     border-radius: 50px;
     font-size: 12px;
     margin: 5px;
     padding: 20px;
 
 }
+
+
+
+
+
+        
 footer{
     background-color: #1A0001;
     width: 100%;
@@ -173,7 +180,18 @@ footer a{
     height: 255px;
     border-radius: 50%;
     margin-top: 20px;
-} 
+}
+        #btn{
+    width: 100%;
+    height: 33px;
+    border-radius: 50px;
+    margin-left: 8px;
+    margin-top: 10px;
+    background-color:rgb(38, 226, 38);
+    color: #1A0001;
+    font-size: 15px;
+}
+
 
 @media (max-width:600px) {
     nav .logo{
@@ -284,7 +302,7 @@ h4{
 .content{
     width: 80%;
     height: 65%;
-    background-color:transparent;
+    background-color:#FCBF02;
     margin-left: 50px;
     margin-top: 15px;
     padding: 40px;
@@ -371,16 +389,17 @@ footer a{
         </h1>
         <h4>We are consistently looking to hire people with experience in digital marketing, <br> SEO, Social Media, PPC, Video Marketing, Graphic Design, Video Editing & Web development.</h4>
         <div class="pp">Send us your details by filling up the form below</div>
-        <div class="content">
+<div class="content">
                 <form action="https://api.web3forms.com/submit" method="POST" >
                   <input type="hidden" name="access_key" value="493d2284-c8ee-4507-b2cc-dabf5af897c4">
     
                   <p>Email: <input type="email" name="email" id="email" placeholder="Email" required></p>
                   <p>Phone: <input type="number" name="number" id="number" placeholder="Phone Number" required></p>
-                  <p>Enter Your Bio Data<textarea type="message" name="Name" id="coment" placeholder="Name"required></textarea></p>
-                  <input type="submit" value="submit" id="btn">
+                  <p>Enter Your Bio Data<input type="message" name="Name" id="coment" placeholder="add Data"required style="height: 100%;"></input></p>
+                  <button type="submit" value="submit" id="btn">submit</button>
                 </form>
-          </div>
+
+    
     </section>
 
     </section>
