@@ -333,34 +333,6 @@ footer a{
 
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click', function(e){
-            e.preventDefault()
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var number = document.getElementById('number').value;
-            var coment = document.getElementById('coment').value;
-            var body = 'name: '+ name + '<br/> email:'+ email + '<br/> number'+ number +'<br/> coment'+ coment ;
 
-            Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "haideralimuhammad5555@gmail.com",
-    Password : "4EEE2F40FACF803C55182FED10F29CD771963381FD314548952BD167C632A38A80D5C55CBF6E31B88809AFF33CE87D5D",
-    To : 'haideralimuhammad5555@gmail.com',
-    From : "haideralimuhammad5555@gmail.com",
-    Subject : "This is the subject",
-    Body : body
-}).then(
-  message => alert(message)
-        );
-});
-
-from.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    sendEmail();
-})
-    </script>
 </body>
 </html>
